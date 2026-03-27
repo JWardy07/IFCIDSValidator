@@ -1,0 +1,138 @@
+<!-- support.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IFC IDS Validator - Support</title>
+  <style>
+    :root {
+      --bg-top: #0a2f5f;
+      --bg-bottom: #5f2cb1;
+      --card: rgba(255, 255, 255, 0.10);
+      --border: rgba(255, 255, 255, 0.16);
+      --text: #eef4ff;
+      --muted: #c8d4ff;
+      --cyan: #5ce4ff;
+      --magenta: #ff61d2;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(160deg, var(--bg-top) 0%, #173c7d 40%, var(--bg-bottom) 100%);
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      backdrop-filter: blur(4px);
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 32px;
+      line-height: 1.1;
+    }
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 21px;
+      line-height: 1.2;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 10px 0;
+    }
+    ul { margin: 0; padding-left: 20px; }
+    a { color: var(--cyan); }
+    .sub {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+    .pill {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 13px;
+      background: rgba(0, 0, 0, 0.14);
+    }
+    .accent {
+      color: var(--magenta);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>IFC IDS Validator Support</h1>
+      <p class="sub">Help for iPhone, iPad, and Mac Catalyst users.</p>
+      <span class="pill">Last updated: 27 March 2026</span>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>For support requests, bug reports, or feature requests, email:
+        <a href="mailto:jamiepward@googlemail.com">jamiepward@googlemail.com</a>
+      </p>
+      <p>When reporting an issue, include:</p>
+      <ul>
+        <li>Device type and OS version</li>
+        <li>App version/build</li>
+        <li>A short description of the expected result and what happened</li>
+        <li>If possible, the IFC and IDS sample that reproduces the issue</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Quick Troubleshooting</h2>
+      <ul>
+        <li><span class="accent">Import fails:</span> Re-open the file and make sure it has a supported extension (.ifc, .ifczip, .ids, .xml).</li>
+        <li><span class="accent">Validation appears slow:</span> Large MEP models can take longer. Keep the app open and check the progress indicator.</li>
+        <li><span class="accent">No export output:</span> Run validation first, then export report in TXT/JSON/CSV.</li>
+        <li><span class="accent">Mac file access issues:</span> Re-import the file to refresh security-scoped access permissions.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Supported Formats</h2>
+      <ul>
+        <li>IFC model input: <code>.ifc</code>, <code>.ifczip</code></li>
+        <li>IDS input: <code>.ids</code>, <code>.xml</code> (IDS-compatible XML)</li>
+        <li>Report export: <code>.txt</code>, <code>.json</code>, <code>.csv</code></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>This app is designed for on-device workflows. See the full privacy policy here:
+        <a href="./privacy.html">Privacy Policy</a>
+      </p>
+    </section>
+
+    <footer>
+      IFC IDS Validator
+    </footer>
+  </main>
+</body>
+</html>
